@@ -4,9 +4,7 @@
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
-<<<<<<< HEAD
 
-=======
   cmat <- NULL
   
   set <- function(y) {
@@ -20,7 +18,7 @@ makeCacheMatrix <- function(x = matrix()) {
   list(set = set, get=get,
        setInverse = setInverse,
        getInverse = getInverse)
->>>>>>> cachematrix.R
+ cachematrix.R
 }
 
 
@@ -28,8 +26,6 @@ makeCacheMatrix <- function(x = matrix()) {
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
-<<<<<<< HEAD
-=======
   
   cmat <- x$getInverse()
   if(!is.null(cmat)){
@@ -42,5 +38,5 @@ cacheSolve <- function(x, ...) {
   x$setInverse(cmat)
   cmat
   
->>>>>>> cachematrix.R
+ cachematrix.R
 }
